@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/noise-bg.png');
+  background-color: #445747;
+  color: white;
+  text-align: center;
 }
 
 code {
