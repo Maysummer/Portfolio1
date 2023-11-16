@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { HamburgerContainer, Links, LinksContainer, NavbarContainer } from './navbar_styles';
+import {
+  Dot,
+  HamburgerContainer,
+  Links,
+  LinksContainer,
+  NavbarContainer,
+  NmesoContainer,
+} from './navbar_styles';
 import Hamburger from 'hamburger-react';
 
 export default function Navbar() {
@@ -28,17 +35,30 @@ export default function Navbar() {
 
   return (
     <NavbarContainer>
+      <NmesoContainer>
+        <h4>Nmeso</h4>
+        <Dot></Dot>
+      </NmesoContainer>
+
       {screenWidth < 768 && (
-        <HamburgerContainer>
-          <Hamburger toggled={isOpen} toggle={setIsOpen} />
-        </HamburgerContainer>
+          <HamburgerContainer>
+            <Hamburger toggled={isOpen} toggle={setIsOpen} />
+            <LinksContainer flexDir={isOpen} hideList={hideList()}>
+              <Links href="http://">About</Links>
+              <Links href="http://">Projects</Links>
+              <Links href="http://">Skills</Links>
+              <Links href="http://">Contact</Links>
+            </LinksContainer>
+          </HamburgerContainer>
       )}
-      <LinksContainer flexDir={isOpen} hideList={hideList()}>
-        <Links href="http://">About</Links>
-        <Links href="http://">Projects</Links>
-        <Links href="http://">Skills</Links>
-        <Links href="http://">Contact</Links>
-      </LinksContainer>
+      {screenWidth >= 768 && (
+        <LinksContainer flexDir={isOpen} hideList={hideList()}>
+          <Links href="http://">About</Links>
+          <Links href="http://">Projects</Links>
+          <Links href="http://">Skills</Links>
+          <Links href="http://">Contact</Links>
+        </LinksContainer>
+      )}
     </NavbarContainer>
   );
 }
