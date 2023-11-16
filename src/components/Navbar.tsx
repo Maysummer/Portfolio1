@@ -23,7 +23,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    if (screenWidth < 768 && !isOpen) {
+    if ((screenWidth < 768 && !isOpen) || (screenWidth >= 768)) {
       setIsOpen(false);
     }
     window.addEventListener('resize', handleResize);
@@ -43,7 +43,7 @@ export default function Navbar() {
       {screenWidth < 768 && (
           <HamburgerContainer>
             <Hamburger toggled={isOpen} toggle={setIsOpen} />
-            <LinksContainer flexDir={isOpen} hideList={hideList()}>
+            <LinksContainer openHamburger={isOpen} hideList={hideList()}>
               <Links href="http://">About</Links>
               <Links href="http://">Projects</Links>
               <Links href="http://">Skills</Links>
@@ -52,7 +52,7 @@ export default function Navbar() {
           </HamburgerContainer>
       )}
       {screenWidth >= 768 && (
-        <LinksContainer flexDir={isOpen} hideList={hideList()}>
+        <LinksContainer openHamburger={isOpen} hideList={hideList()}>
           <Links href="http://">About</Links>
           <Links href="http://">Projects</Links>
           <Links href="http://">Skills</Links>

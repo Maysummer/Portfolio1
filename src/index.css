@@ -54,6 +54,7 @@ code {
 }
 
 .wave {
+  font-size: 2em;
   animation-name: wave-animation; 
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
@@ -70,4 +71,9 @@ code {
    50% { transform: rotate(10.0deg) }
    60% { transform: rotate( 0.0deg) }
   100% { transform: rotate( 0.0deg) }
+}
+
+.helloContainer {
+  display: flex;
+  align-items: center;
 }

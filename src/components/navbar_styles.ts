@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export interface NavProps {
   hideList: boolean;
-  flexDir: boolean;
+  openHamburger: boolean;
 }
 export const NavbarContainer = styled.nav`
   width: 100%;
@@ -14,6 +14,7 @@ export const NavbarContainer = styled.nav`
   );
   position: fixed;
   top: 0;
+  align-items: flex-start;
 `;
 
 export const HamburgerContainer = styled.div`
@@ -31,7 +32,7 @@ export const Links = styled.a`
 `;
 
 export const LinksContainer = styled(HamburgerContainer)<NavProps>`
-  flex-direction: ${(props) => (props.flexDir ? 'column' : 'row')};
+  flex-direction: ${(props) => (props.openHamburger ? 'column' : 'row')};
   display: ${(props) => (props.hideList ? 'none' : 'flex')};
 `;
 
