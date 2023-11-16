@@ -1,9 +1,10 @@
-import Navbar from "../components/Navbar";
+import Navbar from '../components/Navbar';
 
-export default function Projects (){
+export default function Projects() {
   return (
     <div>
       <Navbar />
-      Projects</div>
-  )
+      Projects
+    </div>
+  );
 }

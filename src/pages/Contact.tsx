@@ -1,9 +1,10 @@
-import Navbar from "../components/Navbar";
+import Navbar from '../components/Navbar';
 
-export default function Contact (){
+export default function Contact() {
   return (
     <div>
       <Navbar />
-      Contact</div>
-  )
+      Contact
+    </div>
+  );
 }

@@ -1,9 +1,10 @@
-import Navbar from "../components/Navbar";
+import Navbar from '../components/Navbar';
 
-export default function About (){
+export default function About() {
   return (
     <div>
       <Navbar />
-      About</div>
-  )
+      About
+    </div>
+  );
 }

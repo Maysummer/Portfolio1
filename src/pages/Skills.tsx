@@ -1,9 +1,10 @@
-import Navbar from "../components/Navbar";
+import Navbar from '../components/Navbar';
 
-export default function Skills (){
+export default function Skills() {
   return (
     <div>
       <Navbar />
-      Skills</div>
-  )
+      Skills
+    </div>
+  );
 }
