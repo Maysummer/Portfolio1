@@ -1,6 +1,9 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import './index.css';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Skills from './pages/Skills';
+import Contact from './pages/Contact';
 
 function App() {
   const title = 'a Frontend Engineer';
@@ -21,6 +24,10 @@ function App() {
           ))}
         </h3>
       </div>
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
     </div>
   );
 }

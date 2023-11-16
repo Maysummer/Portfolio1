@@ -23,12 +23,16 @@ export const HamburgerContainer = styled.div`
   flex-direction: column;
 `;
 
-export const Links = styled.a`
+export const Links = styled.div`
   color: white;
   text-decoration: none;
-  margin: 2em;
-  font-size: larger;
-  font-weight: 500;
+  margin: 1.5em;
+  font-size: medium;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const LinksContainer = styled(HamburgerContainer)<NavProps>`

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Dot,
   HamburgerContainer,
@@ -8,6 +8,7 @@ import {
   NmesoContainer,
 } from './navbar_styles';
 import Hamburger from 'hamburger-react';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    if ((screenWidth < 768 && !isOpen) || (screenWidth >= 768)) {
+    if ((screenWidth < 768 && !isOpen) || screenWidth >= 768) {
       setIsOpen(false);
     }
     window.addEventListener('resize', handleResize);
@@ -41,22 +42,54 @@ export default function Navbar() {
       </NmesoContainer>
 
       {screenWidth < 768 && (
-          <HamburgerContainer>
-            <Hamburger toggled={isOpen} toggle={setIsOpen} />
-            <LinksContainer openHamburger={isOpen} hideList={hideList()}>
-              <Links href="http://">About</Links>
-              <Links href="http://">Projects</Links>
-              <Links href="http://">Skills</Links>
-              <Links href="http://">Contact</Links>
-            </LinksContainer>
-          </HamburgerContainer>
+        <HamburgerContainer>
+          <Hamburger toggled={isOpen} toggle={setIsOpen} />
+          <LinksContainer openHamburger={isOpen} hideList={hideList()}>
+            <Links>
+              <ScrollLink to="about" smooth={true} duration={500}>
+                About
+              </ScrollLink>
+            </Links>
+            <Links>
+              <ScrollLink to="contact" smooth={true} duration={500}>
+                Contact
+              </ScrollLink>
+            </Links>
+            <Links>
+              <ScrollLink to="projects" smooth={true} duration={500}>
+                Projects
+              </ScrollLink>
+            </Links>
+            <Links>
+              <ScrollLink to="skills" smooth={true} duration={500}>
+                Skills
+              </ScrollLink>
+            </Links>
+          </LinksContainer>
+        </HamburgerContainer>
       )}
       {screenWidth >= 768 && (
         <LinksContainer openHamburger={isOpen} hideList={hideList()}>
-          <Links href="http://">About</Links>
-          <Links href="http://">Projects</Links>
-          <Links href="http://">Skills</Links>
-          <Links href="http://">Contact</Links>
+          <Links>
+            <ScrollLink to="about" smooth={true} duration={500}>
+              About
+            </ScrollLink>
+          </Links>
+          <Links>
+            <ScrollLink to="contact" smooth={true} duration={500}>
+              Contact
+            </ScrollLink>
+          </Links>
+          <Links>
+            <ScrollLink to="projects" smooth={true} duration={500}>
+              Projects
+            </ScrollLink>
+          </Links>
+          <Links>
+            <ScrollLink to="skills" smooth={true} duration={500}>
+              Skills
+            </ScrollLink>
+          </Links>
         </LinksContainer>
       )}
     </NavbarContainer>
