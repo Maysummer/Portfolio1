@@ -9,6 +9,7 @@ import {
 } from './navbar_styles';
 import Hamburger from 'hamburger-react';
 import { Link as ScrollLink } from 'react-scroll';
+import NavLink from './NavLink';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,57 +41,14 @@ export default function Navbar() {
         <h4>Nmeso</h4>
         <Dot></Dot>
       </NmesoContainer>
-
       {screenWidth < 768 && (
         <HamburgerContainer>
           <Hamburger toggled={isOpen} toggle={setIsOpen} />
-          <LinksContainer openHamburger={isOpen} hideList={hideList()}>
-            <Links>
-              <ScrollLink to="about" smooth={true} duration={500}>
-                About
-              </ScrollLink>
-            </Links>
-            <Links>
-              <ScrollLink to="contact" smooth={true} duration={500}>
-                Contact
-              </ScrollLink>
-            </Links>
-            <Links>
-              <ScrollLink to="projects" smooth={true} duration={500}>
-                Projects
-              </ScrollLink>
-            </Links>
-            <Links>
-              <ScrollLink to="skills" smooth={true} duration={500}>
-                Skills
-              </ScrollLink>
-            </Links>
-          </LinksContainer>
+          <NavLink isOpen={isOpen} hideList={hideList()}/>
         </HamburgerContainer>
       )}
       {screenWidth >= 768 && (
-        <LinksContainer openHamburger={isOpen} hideList={hideList()}>
-          <Links>
-            <ScrollLink to="about" smooth={true} duration={500}>
-              About
-            </ScrollLink>
-          </Links>
-          <Links>
-            <ScrollLink to="contact" smooth={true} duration={500}>
-              Contact
-            </ScrollLink>
-          </Links>
-          <Links>
-            <ScrollLink to="projects" smooth={true} duration={500}>
-              Projects
-            </ScrollLink>
-          </Links>
-          <Links>
-            <ScrollLink to="skills" smooth={true} duration={500}>
-              Skills
-            </ScrollLink>
-          </Links>
-        </LinksContainer>
+        <NavLink isOpen={isOpen} hideList={hideList()}/>
       )}
     </NavbarContainer>
   );
