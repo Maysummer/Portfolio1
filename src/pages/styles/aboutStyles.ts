@@ -31,7 +31,7 @@ export const AboutImage = styled.img`
 
   &:hover {
     animation-name: img-animation;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     transform-origin: 70% 70%;
     display: inline-block;
@@ -41,19 +41,19 @@ export const AboutImage = styled.img`
         transform: rotate(0deg);
       }
       10% {
-        transform: rotate(15deg);
+        transform: rotate(5deg);
       }
       20% {
-        transform: rotate(-10deg);
+        transform: rotate(-5deg);
       }
       30% {
-        transform: rotate(14deg);
+        transform: rotate(3deg);
       }
       40% {
-        transform: rotate(-4deg);
+        transform: rotate(-3deg);
       }
       50% {
-        transform: rotate(10deg);
+        transform: rotate(2deg);
       }
       60% {
         transform: rotate(0deg);
