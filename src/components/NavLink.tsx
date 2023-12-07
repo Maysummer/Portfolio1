@@ -1,5 +1,5 @@
 import { Link as ScrollLink } from 'react-scroll';
-import { Links, LinksContainer } from './navbar_styles';
+import { Links, LinksContainer } from './navbarStyles';
 
 interface NavLinkProps {
   isOpen: boolean;
@@ -9,26 +9,26 @@ interface NavLinkProps {
 export default function NavLink({ isOpen, hideList }: NavLinkProps) {
   return (
     <LinksContainer openHamburger={isOpen} hideList={hideList}>
-    <Links>
-      <ScrollLink to="about" smooth={true} duration={500}>
-        About
-      </ScrollLink>
-    </Links>
-    <Links>
-      <ScrollLink to="contact" smooth={true} duration={500}>
-        Contact
-      </ScrollLink>
-    </Links>
-    <Links>
-      <ScrollLink to="projects" smooth={true} duration={500}>
-        Projects
-      </ScrollLink>
-    </Links>
-    <Links>
-      <ScrollLink to="skills" smooth={true} duration={500}>
-        Skills
-      </ScrollLink>
-    </Links>
-  </LinksContainer>
+      <Links>
+        <ScrollLink to="about" smooth={true} duration={500}>
+          About
+        </ScrollLink>
+      </Links>
+      <Links>
+        <ScrollLink to="contact" smooth={true} duration={500}>
+          Contact
+        </ScrollLink>
+      </Links>
+      <Links>
+        <ScrollLink to="projects" smooth={true} duration={500}>
+          Projects
+        </ScrollLink>
+      </Links>
+      <Links>
+        <ScrollLink to="skills" smooth={true} duration={500}>
+          Skills
+        </ScrollLink>
+      </Links>
+    </LinksContainer>
   );
 }

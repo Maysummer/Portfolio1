@@ -6,7 +6,7 @@ import {
   LinksContainer,
   NavbarContainer,
   NmesoContainer,
-} from './navbar_styles';
+} from './navbarStyles';
 import Hamburger from 'hamburger-react';
 import { Link as ScrollLink } from 'react-scroll';
 import NavLink from './NavLink';
@@ -44,12 +44,10 @@ export default function Navbar() {
       {screenWidth < 768 && (
         <HamburgerContainer>
           <Hamburger toggled={isOpen} toggle={setIsOpen} />
-          <NavLink isOpen={isOpen} hideList={hideList()}/>
+          <NavLink isOpen={isOpen} hideList={hideList()} />
         </HamburgerContainer>
       )}
-      {screenWidth >= 768 && (
-        <NavLink isOpen={isOpen} hideList={hideList()}/>
-      )}
+      {screenWidth >= 768 && <NavLink isOpen={isOpen} hideList={hideList()} />}
     </NavbarContainer>
   );
 }
