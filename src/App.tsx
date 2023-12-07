@@ -4,7 +4,6 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
-import {useRef} from 'react';
 
 function App() {
   const title = 'a Frontend Engineer';
