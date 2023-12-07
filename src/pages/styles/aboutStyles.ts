@@ -10,7 +10,7 @@ export const AboutHeader = styled.p`
   text-align: left;
   margin: 0;
   margin-top: 10px;
-  color: #bce2c2;
+  color: #d5ffdb
 `;
 
 export const AboutContent = styled.div`
