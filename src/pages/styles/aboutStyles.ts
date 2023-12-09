@@ -10,7 +10,11 @@ export const AboutHeader = styled.p`
   text-align: left;
   margin: 0;
   margin-top: 10px;
-  color: #d5ffdb
+  color: #d5ffdb;
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
 `;
 
 export const AboutContent = styled.div`
@@ -27,12 +31,12 @@ export const AboutContent = styled.div`
 
 export const AboutImage = styled.img`
   height: 20em;
-  border-radius: 1em;
-  box-shadow: 5px 8px rgba(24, 31, 25, 0.8);
+  border-radius: 3em;
+  filter: drop-shadow(0 0 2rem #d5ffdb);
 
   &:hover {
     animation-name: img-animation;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     transform-origin: 70% 70%;
     display: inline-block;

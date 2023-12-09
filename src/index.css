@@ -16,18 +16,30 @@ code {
 
 .hello {
   font-size: 5em;
-  font-family: 'Agbalumo'
+  font-family: 'Agbalumo';
+
+  @media (max-width: 768px) {
+    font-size: 4em;
+  }
 }
 
 .nmesoma {
   font-size: 4em;
   font-family: 'Agbalumo';
-  color: #d5ffdb;;
+  color: #d5ffdb;
+
+  @media (max-width: 768px) {
+    font-size: 3em;
+  }
 }
 
 .FE {
   font-size: 3em;
-  font-family: 'Agbalumo'
+  font-family: 'Agbalumo';
+
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
 }
 
 .homeContainer {
