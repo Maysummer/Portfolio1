@@ -1,7 +1,7 @@
 import { Link as ScrollLink } from 'react-scroll';
 import { Links, LinksContainer } from './navbarStyles';
 
-interface NavLinkProps {
+type NavLinkProps = {
   isOpen: boolean;
   hideList: boolean;
 }

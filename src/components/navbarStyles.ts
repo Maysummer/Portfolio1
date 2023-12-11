@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-export interface NavProps {
+export type NavProps = {
   hideList: boolean;
   openHamburger: boolean;
 }
