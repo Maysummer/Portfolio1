@@ -1,26 +1,9 @@
 import styled from 'styled-components';
 
-export const AboutContainer = styled.section`
-  padding: 2em 2em;
-`;
-
-export const AboutHeader = styled.p`
-  font-family: 'Agbalumo';
-  font-size: 60px;
-  text-align: left;
-  margin: 0;
-  margin-top: 10px;
-  color: #d5ffdb;
-
-  @media (max-width: 768px) {
-    font-size: 50px;
-  }
-`;
-
 export const AboutContent = styled.div`
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 200px;
   font-size: larger;
 
   @media (max-width: 768px) {
@@ -28,6 +11,10 @@ export const AboutContent = styled.div`
     gap: 50px;
   }
 `;
+
+export const AboutText = styled.p `
+  max-width: 40%;
+`
 
 export const AboutImage = styled.img`
   height: 20em;
