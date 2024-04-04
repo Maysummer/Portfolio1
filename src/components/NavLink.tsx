@@ -15,11 +15,6 @@ export default function NavLink({ isOpen, hideList }: NavLinkProps) {
         </ScrollLink>
       </Links>
       <Links>
-        <ScrollLink to="contact" smooth={true} duration={500}>
-          Contact
-        </ScrollLink>
-      </Links>
-      <Links>
         <ScrollLink to="projects" smooth={true} duration={500}>
           Projects
         </ScrollLink>
@@ -27,6 +22,11 @@ export default function NavLink({ isOpen, hideList }: NavLinkProps) {
       <Links>
         <ScrollLink to="skills" smooth={true} duration={500}>
           Skills
+        </ScrollLink>
+      </Links>
+      <Links>
+        <ScrollLink to="contact" smooth={true} duration={500}>
+          Contact
         </ScrollLink>
       </Links>
     </LinksContainer>

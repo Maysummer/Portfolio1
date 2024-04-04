@@ -2,13 +2,10 @@ import { useEffect, useState } from 'react';
 import {
   Dot,
   HamburgerContainer,
-  Links,
-  LinksContainer,
   NavbarContainer,
   NmesoContainer,
 } from './navbarStyles';
 import Hamburger from 'hamburger-react';
-import { Link as ScrollLink } from 'react-scroll';
 import NavLink from './NavLink';
 
 export default function Navbar() {

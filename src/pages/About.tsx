@@ -1,12 +1,20 @@
 import { AboutContent, AboutImage, AboutText } from "./styles/aboutStyles";
-import { SectionContainer, SectionHeader } from "./styles/sectionStyles";
+import {
+  SectionContainer,
+  SectionHeader,
+  SectionHeaderContainer,
+  SectionHeaderText,
+} from "./styles/sectionStyles";
 
 import nmeso from "../assets/nmeso.jpeg";
 
 export default function About() {
   return (
     <SectionContainer id="about">
-      <SectionHeader>About</SectionHeader>
+      <SectionHeaderContainer>
+        <SectionHeaderText>Who I am</SectionHeaderText>
+        <SectionHeader>About</SectionHeader>
+      </SectionHeaderContainer>
       <AboutContent>
         <AboutText>
           Hello there! I'm a school-taught systems engineer (BSc) and a
@@ -17,7 +25,8 @@ export default function About() {
           also find fulfillment in volunteering to positively impact the
           community.
           <br />
-          <br />Collaboration is at the core of my approach, and I am eager to join
+          <br />
+          Collaboration is at the core of my approach, and I am eager to join
           forces with like-minded individuals to build not just functional but
           truly impactful and beautiful products.
         </AboutText>

@@ -8,13 +8,23 @@ export const SectionContainer = styled.section`
   }
 `;
 
-export const SectionHeader = styled.p`
-  font-family: 'Agbalumo';
-  font-size: 60px;
-  text-align: left;
+export const SectionHeaderContainer = styled.div`
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-top: 10px;
+font-family: 'Agbalumo';
+`
+export const SectionHeaderText = styled.p`
   margin: 0;
-  margin-top: 10px;
+  color: #819c85;
+`
+
+export const SectionHeader = styled.p`
+  font-size: 60px;
+  margin: 0;
   color: #d5ffdb;
+  margin-top: -1rem;
 
   @media (max-width: 768px) {
     font-size: 50px;
