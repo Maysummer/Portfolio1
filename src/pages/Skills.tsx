@@ -7,6 +7,7 @@ import {
   SectionHeaderText,
 } from "./styles/sectionStyles";
 import { SkillCard, SkillsContainer } from "./styles/skillsStyles";
+import Marquee from "react-fast-marquee";
 
 export default function Skills() {
   return (
@@ -15,32 +16,34 @@ export default function Skills() {
         <SectionHeaderText>What I can do</SectionHeaderText>
         <SectionHeader>Skills</SectionHeader>
       </SectionHeaderContainer>
-      <SkillsContainer>
-        <LazyMotion features={domAnimation}>
-          {skills.map((skill, index) => (
-            <m.div
-              initial={{ scale: 0.8 }}
-              animate={{
-                rotate: [0, 10, 0],
-              }}
-              transition={{
-                duration: 1,
-                repeat: Infinity,
-                repeatType: "loop",
-                ease: "linear",
-              }}
-              style={{ transition: "all 0.6s" }}
-              key={index}
-            >
-              <SkillCard>
-                <img src={skill.icon} alt={skill.id} />
-                <h4>{skill.title}</h4>
-                <p>{skill.description}</p>
-              </SkillCard>
-            </m.div>
-          ))}
-        </LazyMotion>
-      </SkillsContainer>
+      <Marquee speed={150} pauseOnHover={true}>
+        <SkillsContainer>
+          <LazyMotion features={domAnimation}>
+            {skills.map((skill, index) => (
+              <m.div
+                initial={{ scale: 0.8 }}
+                animate={{
+                  rotate: [0, 10, 0],
+                }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  ease: "linear",
+                }}
+                style={{ transition: "all 0.6s" }}
+                key={index}
+              >
+                <SkillCard>
+                  <img src={skill.icon} alt={skill.id} />
+                  <h4>{skill.title}</h4>
+                  <p>{skill.description}</p>
+                </SkillCard>
+              </m.div>
+            ))}
+          </LazyMotion>
+        </SkillsContainer>
+      </Marquee>
     </SectionContainer>
   );
 }
