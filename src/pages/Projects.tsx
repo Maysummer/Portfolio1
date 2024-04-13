@@ -33,7 +33,7 @@ export default function Projects() {
       </SectionHeaderContainer>
       <p>
         <StyledFontAwesomeIcon icon={faInfoCircle} />
-        Pictures link to hosted version, text links to source code
+        Pictures link to hosted version, title links to source code
       </p>
       <ProjectContainer>
         <Project>

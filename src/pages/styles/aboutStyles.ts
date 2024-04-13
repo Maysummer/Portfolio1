@@ -23,7 +23,7 @@ export const AboutImage = styled.img`
 
   &:hover {
     animation-name: img-animation;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     transform-origin: 70% 70%;
     display: inline-block;
