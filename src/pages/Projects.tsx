@@ -26,7 +26,7 @@ import {
 
 export default function Projects() {
   return (
-    <SectionContainer>
+    <SectionContainer id='projects'>
       <SectionHeaderContainer>
         <SectionHeaderText>What I have done</SectionHeaderText>
         <SectionHeader>Projects</SectionHeader>

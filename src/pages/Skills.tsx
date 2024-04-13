@@ -1,7 +1,46 @@
+import { skills } from "../constants/constants";
+import { LazyMotion, domAnimation, m } from "framer-motion";
+import {
+  SectionContainer,
+  SectionHeader,
+  SectionHeaderContainer,
+  SectionHeaderText,
+} from "./styles/sectionStyles";
+import { SkillCard, SkillsContainer } from "./styles/skillsStyles";
+
 export default function Skills() {
   return (
-    <div id = 'skills'>
-      <p>Skills</p>
-    </div>
+    <SectionContainer id="skills">
+      <SectionHeaderContainer>
+        <SectionHeaderText>What I can do</SectionHeaderText>
+        <SectionHeader>Skills</SectionHeader>
+      </SectionHeaderContainer>
+      <SkillsContainer>
+        <LazyMotion features={domAnimation}>
+          {skills.map((skill, index) => (
+            <m.div
+              initial={{ scale: 0.8 }}
+              animate={{
+                rotate: [0, 10, 0],
+              }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "linear",
+              }}
+              style={{ transition: "all 0.6s" }}
+              key={index}
+            >
+              <SkillCard>
+                <img src={skill.icon} alt={skill.id} />
+                <h4>{skill.title}</h4>
+                <p>{skill.description}</p>
+              </SkillCard>
+            </m.div>
+          ))}
+        </LazyMotion>
+      </SkillsContainer>
+    </SectionContainer>
   );
 }
