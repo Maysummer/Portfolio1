@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const SectionContainer = styled.section`
   padding: 2em 20em;
-  height: 100vh;
-  
+  margin-bottom: 10em;
+
   @media (max-width: 1270px) {
     padding: 2em 2em;
   }
@@ -13,7 +13,6 @@ export const SectionHeaderContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-margin-top: 10px;
 font-family: 'Agbalumo';
 `
 export const SectionHeaderText = styled.p`
@@ -30,5 +29,6 @@ export const SectionHeader = styled.p`
 
   @media (max-width: 768px) {
     font-size: 50px;
+    margin-top: -1.5rem;
   }
 `;

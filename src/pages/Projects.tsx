@@ -26,7 +26,7 @@ import {
 
 export default function Projects() {
   return (
-    <SectionContainer id='projects'>
+    <SectionContainer id="projects">
       <SectionHeaderContainer>
         <SectionHeaderText>What I have done</SectionHeaderText>
         <SectionHeader>Projects</SectionHeader>
@@ -45,9 +45,9 @@ export default function Projects() {
           </ProjectLink>
           <ProjectText>
             <p>
-              A React application utilising Redux toolkit for state management
-              to handle a drug product list and historical price records fetched
-              using React-query.
+              A React application utilising Redux toolkit to handle a drug
+              product list and historical price records fetched using
+              React-query.
             </p>
             <ProjectLink
               href="https://github.com/Maysummer/Inventory"
@@ -70,9 +70,8 @@ export default function Projects() {
           </ProjectLink>
           <ProjectText>
             <p>
-              React interactive quiz app. Participants can select answers from
-              multiple-choice options, while the app provides real-time feedback
-              to indicate the accuracy of their responses.
+              React quiz app where users choose from multiple-choice answers and
+              receive instant feedback on their accuracy.
             </p>
             <ProjectLink
               href="https://github.com/Maysummer/Quizzical-app"

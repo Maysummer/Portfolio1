@@ -14,6 +14,10 @@ export const AboutContent = styled.div`
 
 export const AboutText = styled.p `
   max-width: 40%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `
 
 export const AboutImage = styled.img`
@@ -54,5 +58,9 @@ export const AboutImage = styled.img`
         transform: rotate(0deg);
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    height: 10em;
   }
 `;
