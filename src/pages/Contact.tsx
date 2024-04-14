@@ -1,7 +1,13 @@
+import { SectionContainer, SectionHeader, SectionHeaderContainer, SectionHeaderText } from "./styles/sectionStyles";
+
 export default function Contact() {
   return (
-    <div id='contact'>
-      <p>Contact</p>
-    </div>
+    <SectionContainer id="contact">
+      <SectionHeaderContainer>
+        <SectionHeaderText>Where to find me</SectionHeaderText>
+        <SectionHeader>Contact</SectionHeader>
+      </SectionHeaderContainer>
+      Helllllpo
+    </SectionContainer>
   );
 }

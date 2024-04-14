@@ -28,8 +28,6 @@ export default function Skills() {
                 transition={{
                   duration: 1,
                   repeat: Infinity,
-                  repeatType: "loop",
-                  ease: "linear",
                 }}
                 style={{ transition: "all 0.6s" }}
                 key={index}
