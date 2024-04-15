@@ -55,11 +55,6 @@ code {
   }
 }
 
-.animatedTitle {
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;

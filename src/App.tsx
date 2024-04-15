@@ -1,28 +1,30 @@
-import Navbar from './components/Navbar';
-import './index.css';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Skills from './pages/Skills';
-import Contact from './pages/Contact';
+import Navbar from "./components/Navbar";
+import "./index.css";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
+import { Typewriter } from "react-simple-typewriter";
 
 function App() {
-  const title = 'a Frontend Engineer';
+  const title = "a Frontend Engineer";
+
   return (
     <div>
       <Navbar />
       <div className="homeContainer">
-        <div className='helloContainer'>
+        <div className="helloContainer">
           <p className="hello">Hello </p>
           <span className="wave">👋</span>
         </div>
         <h1 className="nmesoma">I'm Nmesoma Udojike</h1>
         <h3 className="FE">
-          {title.split('').map((char, index) => (
-            <span className="animatedTitle" key={index}>
-              {char}
-            </span>
-          ))}
+        <Typewriter
+          words={["a Frontend Engineer"]}
+          loop={5}
+        />
         </h3>
+        
       </div>
       <About />
       <Projects />
