@@ -7,8 +7,6 @@ import Contact from "./pages/Contact";
 import { Typewriter } from "react-simple-typewriter";
 
 function App() {
-  const title = "a Frontend Engineer";
-
   return (
     <div>
       <Navbar />

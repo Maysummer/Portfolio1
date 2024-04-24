@@ -61,7 +61,7 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 export const Show = styled(ProjectLink)`
   background-color: #4a5744;
   text-decoration: none;
-  color: #f0f0f0;
+  color: #d5ffdb;
   padding: 0.5em 1em;
   border-radius: 10px;
   font-size: 19px;

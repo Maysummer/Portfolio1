@@ -90,3 +90,9 @@ code {
   display: flex;
   align-items: center;
 }
+
+::placeholder {
+  color: #d5ffdb;
+  opacity: 0.4;
+  padding-left: 1em;
+}
