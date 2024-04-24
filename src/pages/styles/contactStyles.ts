@@ -14,7 +14,7 @@ const SharedInputStyles = `
   border: none;
   color: #d5ffdb;
   outline: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 1em;
   
   &:hover {
