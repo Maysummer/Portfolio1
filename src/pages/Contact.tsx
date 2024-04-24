@@ -1,12 +1,17 @@
-import { FormContainer, Input, Submit, TextArea } from "./styles/contactStyles";
+import {
+  FormContainer,
+  Input,
+  Submit,
+  TextArea,
+} from "./styles/contactStyles";
 import {
   SectionContainer,
   SectionHeader,
   SectionHeaderContainer,
   SectionHeaderText,
 } from "./styles/sectionStyles";
-import '../index.css'
-import emailjs from '@emailjs/browser'
+import "../index.css";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   return (

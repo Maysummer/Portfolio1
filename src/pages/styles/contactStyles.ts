@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { styled } from "styled-components";
 
 export const FormContainer = styled.div`
@@ -45,3 +46,7 @@ export const Submit = styled.button`
     background-color: #62745A;
   }
 `
+
+export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
+  padding: 0 0.5em;
+`;
