@@ -6,6 +6,7 @@ import {
   SectionHeaderText,
 } from "./styles/sectionStyles";
 import '../index.css'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
   return (
@@ -14,12 +15,10 @@ export default function Contact() {
         <SectionHeaderText>Where to find me</SectionHeaderText>
         <SectionHeader>Contact</SectionHeader>
       </SectionHeaderContainer>
-      <form action="">
+      <form>
         <FormContainer>
-          <Input type="text" placeholder="First name" />
-          <Input type="text" placeholder="Last name" />
+          <Input type="text" placeholder="Name" />
           <Input type="email" placeholder="Email address" />
-          <Input type="number" placeholder="Phone number" />
           <TextArea
             name=""
             id=""
