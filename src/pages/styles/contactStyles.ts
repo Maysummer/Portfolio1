@@ -8,6 +8,10 @@ export const FormContainer = styled.div`
   line-height: 2.25rem;
   padding-top: 2em;
   width: 70%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const SharedInputStyles = `
