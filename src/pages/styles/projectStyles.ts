@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const ProjectContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-gap: 5rem;
   margin: 0 auto;
 `;
@@ -72,8 +72,6 @@ export const Show = styled(ProjectLink)`
   }
 
   &:hover {
-    background-color: #62745A;
+    background-color: #62745a;
   }
 `;
-
-

@@ -18,7 +18,7 @@ export default function About() {
       <AboutContent>
         <AboutText>
           Hello there! I'm a school-taught systems engineer (BSc) and a
-          self-taught frontend engineer, driven by a deep passion for
+          self-taught software engineer, driven by a deep passion for
           technology.
           <br />
           <br />I enjoy simplifying complex ideas into user-friendly designs. I
