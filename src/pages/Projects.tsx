@@ -45,7 +45,7 @@ export default function Projects() {
           </ProjectLink>
           <ProjectText>
             <p>
-              A React application utilising Redux toolkit to handle a drug
+              A ReactJS application utilising Redux toolkit to handle a drug
               product list and historical price records fetched using
               React-query.
             </p>
